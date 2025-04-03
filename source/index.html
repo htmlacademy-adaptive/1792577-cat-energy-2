@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -14,8 +17,19 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="header__logo-container">
-        <a class="logo-main-img header__logo-img"></a>
-        <a class="logo-main-text header__logo-text"></a>
+        <a class="logo-main--link header__logo--link" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo/desctop/logo-desctop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./images/logo/tablet/logo-tablet.svg">
+            <img class="header__logo--img" src="images/logo/mobile/logo-mobile.svg" width="33" height="38" alt="Логотип-картинка сайта">
+          </picture>
+        </a>
+        <a class="logo-main--link header__logo--link link" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo/logo-text-desctop.svg">
+            <img class="header__logo--text" src="images/logo/logo-text.svg" width="33" height="38" alt="Логотип-текст сайта">
+          </picture>
+        </a>
       </div>
       <nav class="header__nav">
         <ul class="header__nav-list list-reset">
@@ -34,7 +48,11 @@
             питание для котов</h1>
           <p class="greetings__text text-basic">Занялся собой? Займись котом!</p>
           <button class="greetings__button button" type="button">Подобрать программу</button>
-          <!--<img class="greetings__img" width="552" height="499" src="" alt="Корм Cat Energy со вкусом курицы">-->
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./images/index/feed/feed-index-desctop@1x.png 1x, ./images/index/feed/feed-index-desctop@2x.png 2x" type="image/png" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="./images/index/feed/feed-index-tablet@1x.png 1x, ./images/index/feed/feed-index-tablet@2x.png 2x" type="image/png" width="709" height="608">
+            <img class="greetings__img" src="./images/index/feed/feed-index-mobile@1x.png" srcset="./images/index/feed/feed-index-mobile@2x.png" width="280" height="270" alt="Корм Cat Energy со вкусом курицы">
+          </picture>
         </div>
       </section>
       <section class="programs">
