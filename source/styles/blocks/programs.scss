@@ -1,0 +1,76 @@
+.programs__wrapper {
+  padding: 20px;
+}
+
+.programs__card {
+  padding: 20px;
+  background-color: $basic-grey;
+  margin-bottom: 20px;
+}
+
+.programs__card-accent {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-green;
+  display: block;
+  margin-right: 20px;
+}
+
+.programs__card-title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.programs__card-text {
+  border-bottom: 1px solid $gray-accent;
+  padding: 23px;
+  margin-bottom: 15px;
+}
+
+.programs__card-link {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.programs__card-icon {
+  display: block;
+  position: absolute;
+  background-image: url("../../images/index/programs/arrow-mobile.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 10px;
+  top: 7px;
+  left: 104px;
+}
+
+.example__price {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.example__sliders {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.example__slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.example__slide:first-child {
+  opacity: 1;
+}

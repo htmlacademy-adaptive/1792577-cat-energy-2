@@ -1,0 +1,145 @@
+.example__wrapper {
+  padding: 20px;
+  background-color: $special-grey-medium;
+}
+
+.example__addition {
+  font-family: $oswald-family;
+  max-width: 124px;
+  max-height: 70px;
+  border: 1px solid $gray-accent;
+  border-radius: 3px;
+  padding: 14px 20px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.example__tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+
+.example__accent {
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-color-black;
+  text-transform: uppercase;
+  min-width: 124px;
+}
+
+.example__accent--height::after {
+  content: "Снижение веса";
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: lowercase;
+  color: $special-dark-grey;
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $special-grey-medium;
+  padding: 0 10px;
+}
+
+.example__accent--day::after {
+  content: "Затрачено времени";
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: lowercase;
+  color: $special-dark-grey;
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $special-grey-medium;
+  padding: 0 10px;
+}
+
+.example__sliders {
+  position: relative;
+}
+
+.example__sliders-container {
+  position: relative;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+}
+
+.example__sliders-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.example__slider-item::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.example__slide--big-cat {
+  width: 100%;
+  height: 100%;
+  display: block;
+  clip-path: inset(0 50% 0 0);
+}
+
+.example__slide--thin-cat {
+  width: 100%;
+  height: 100%;
+  display: block;
+  clip-path: inset(0 0 0 50%);
+}
+
+.example__slider-input {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.example__slider-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: $special-color-white;
+  border: 2px solid $special-grey-2;
+  border-radius: 50%;
+  translate: -50% -50%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/result-arrow.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $special-grey-2;
+    translate: -50% -50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -108px;
+    left: 50%;
+    width: 4px;
+    height: 108px;
+    background-color: $special-grey-2;
+    translate: -50% 0;
+    box-shadow: 0 144px 0 0 $special-grey-2;
+  }
+}

@@ -1,0 +1,16 @@
+.promo__wrapper {
+  padding: 20px;
+}
+
+.promo__item {
+  display: flex;
+  align-items: center;
+}
+
+.promo__icon {
+  display: block;
+  min-width: 60px;
+  min-height: 60px;
+  background-color: $basic-green;
+  margin-right: 20px;
+}
