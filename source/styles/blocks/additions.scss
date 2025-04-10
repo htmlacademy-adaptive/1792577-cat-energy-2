@@ -1,4 +1,4 @@
-.addition__wrapper {
+.additions__wrapper {
   padding: 20px;
 }
 
@@ -41,4 +41,35 @@
   padding: 10px;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.additions__present {
+  background-image:
+    linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
+    url("../../images/catalog/cat-backpack-mobail@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 280px, contain;
+  background-position: center;
+  min-width: 100%;
+  min-height: 290px;
+}
+
+.additions__text {
+  position: relative;
+  color: $special-color-white;
+  text-align: center;
+  vertical-align: bottom;
+  padding: 43px 58px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-image: url("../../icons/gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

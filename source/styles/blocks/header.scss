@@ -1,13 +1,15 @@
 .header__wrapper {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   padding: 13px 20px 21px;
 }
 
-.header__logo-link--img {
-  justify-self: flex-start;
+.header__logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .header__nav {

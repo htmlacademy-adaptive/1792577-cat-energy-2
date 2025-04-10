@@ -16,17 +16,15 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo-link header__logo-link--img link" href="#">
+      <a class="header__logo-link header__logo link" href="#">
         <picture>
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo/desctop/logo-desctop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./images/logo/tablet/logo-tablet.svg">
-          <img class="header__logo-img" src="images/logo/mobile/logo-mobile.svg" width="33" height="38" alt="Логотип-картинка сайта">
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo-header/logo-header-img/logo-desctop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./images/logo-header/logo-header-img/logo-tablet.svg">
+          <img class="header__logo-img" src="./images/logo-header/logo-header-img/logo-mobile.svg" width="33" height="38" alt="Логотип-картинка сайта">
         </picture>
-      </a>
-      <a class="header__logo-link" href="#">
         <picture>
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo/logo-text-desctop.svg">
-          <img class="header__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Логотип-текст сайта">
+          <source media="(min-width: 768px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo-header/logo-header-text/logo-text-desctop.svg">
+          <img class="header__logo-text" src="./images/logo-header/logo-header-text/logo-text-mobail.svg" width="101" height="18" alt="Логотип-текст сайта">
         </picture>
       </a>
 
@@ -40,7 +38,7 @@
       </div>
       <ul class="header__nav-list list-reset">
         <li class="header__nav-item"><a class="header__nav-link link" href="index.html">Главная</a></li>
-        <li class="header__nav-item"><a class="header__nav-link link" href="#">Каталог продукции</a></li>
+        <li class="header__nav-item"><a class="header__nav-link link" href="catalog.html">Каталог продукции</a></li>
         <li class="header__nav-item"><a class="header__nav-link link" href="#">Подбор программы</a></li>
       </ul>
       <nav class="header__nav">
@@ -298,6 +296,16 @@
               <button class="additions__card-button button" type="button">Заказать</button>
             </li>
           </ul>
+          <div class="additions__present">
+            <p class="additions__text text">
+              <span class="additions__element">
+                <svg width="50" height="50">
+                  <use href="./icons/gift.svg#gift"></use>
+                </svg>
+              </span>
+              Закажите все и получите чехол для кота в подарок!
+            </p>
+          </div>
         </div>
       </section>
     </div>

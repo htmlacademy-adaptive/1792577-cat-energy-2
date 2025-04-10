@@ -17,17 +17,15 @@
   <div class="page__wrapper">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo-link header__logo-link--img link" href="#">
+        <a class="header__logo-link header__logo link" href="#">
           <picture>
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo/desctop/logo-desctop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./images/logo/tablet/logo-tablet.svg">
-            <img class="header__logo-img" src="images/logo/mobile/logo-mobile.svg" width="33" height="38" alt="Логотип-картинка сайта">
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo-header/logo-header-img/logo-desctop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./images/logo-header/logo-header-img/logo-tablet.svg">
+            <img class="header__logo-img" src="./images/logo-header/logo-header-img/logo-mobile.svg" width="33" height="38" alt="Логотип-картинка сайта">
           </picture>
-        </a>
-        <a class="header__logo-link" href="#">
           <picture>
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo/logo-text-desctop.svg">
-            <img class="header__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Логотип-текст сайта">
+            <source media="(min-width: 768px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo-header/logo-header-text/logo-text-desctop.svg">
+            <img class="header__logo-text" src="./images/logo-header/logo-header-text/logo-text-mobail.svg" width="101" height="18" alt="Логотип-текст сайта">
           </picture>
         </a>
 
@@ -55,6 +53,9 @@
           <div class="greetings__wrapper">
             <h1 class="greetings__title title title-main">Функциональное
               питание для котов</h1>
+            <svg width="16" height="16">
+              <use href="../source/icons/circle-muscular-cat.svg#circle-muscular-cat"></use>
+            </svg>
             <p class="greetings__text">Занялся собой? Займись котом!</p>
             <picture>
               <source media="(min-width: 1440px)" srcset="./images/index/feed/feed-index-desctop@1x.png, ./images/index/feed/feed-index-desctop@2x.png 2x" type="image/png" width="552" height="499">
@@ -188,8 +189,12 @@
           <a class="logo-main-text footer__logo-text" href="index.html">logo</a>
           <ul class="contact__social-list list-reset">
             <li class="contact__social-item">
-              <span class="visually-hidden">Мы в vk</span>
-              <a class="contact__social-link link contact__social-link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">vk</a>
+              <a class="contact__social-link link contact__social-link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden">Мы в vk</span>
+                <svg width="27" height="17">
+                  <use href="./icons/vkontakte.svg#vkontacte"></use>
+                </svg>
+              </a>
             </li>
             <li class="contact__social-item">
               <span class="visually-hidden">Мы на youtube</span>
