@@ -1,3 +1,16 @@
+.form-promotion {
+  position: relative;
+
+  &::before {
+    content: "";
+    border: 1px solid #68b738;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    min-width: calc(100% - 285px);
+  }
+}
+
 .form-promotion__form {
   padding: 20px;
 }

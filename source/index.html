@@ -98,24 +98,24 @@
             </h2>
             <ul class="promo__list list-reset">
               <li class="promo__item">
-                <span class="promo__icon"></span>
+                <span class="promo__icon promo__icon--list"></span>
                 <p class="promo__card-text text-basic">
                   Функциональное питание содержит только полезные питательные вещества.</p>
               </li>
               <li class="promo__item">
-                <span class="promo__icon"></span>
+                <span class="promo__icon promo__icon--powder"></span>
                 <p class="promo__card-text text-basic">
                   Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                 </p>
               </li>
               <li class="promo__item">
-                <span class="promo__icon"></span>
+                <span class="promo__icon promo__icon--cutlery"></span>
                 <p class="promo__card-text text-basic">
                   Замените один-два приема обычной еды на наше функциональное питание.
                 </p>
               </li>
               <li class="promo__item">
-                <span class="promo__icon"></span>
+                <span class="promo__icon promo__icon--scales"></span>
                 <p class="promo__card-text text-basic">
                   Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
                 </p>
@@ -149,13 +149,13 @@
               <ul class="example__sliders-list list">
                 <li class="example__slider-item example__slider-item--before">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="./images/index/result/cat-before-tablet@1x.png 1x, ./images/index/result/cat-before-tablet@2x.png 2x," type="image/png" width="560" height="512">
+                    <source media="(min-width: 768px)" srcset="./images/index/result/cat-before-tablet@1x.png 1x, ./images/index/result/cat-before-tablet@2x.png 2x" type="image/png" width="560" height="512">
                     <img class="example__slide example__slide--big-cat" src="./images/index/result/cat-before-mobail@1x.png" srcset="./images/index/result/cat-before-mobail@2x.png" width="280" height="256" alt="Кот до того как начал питаться нашим кормом">
                   </picture>
                 </li>
                 <li class="example__slider-item example__slider-item--after">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="./images/index/result/cat-after-tablet@1x.png 1x, ./images/index/result/cat-after-tablet@2x.png 2x," type="image/png" width="560" height="512">
+                    <source media="(min-width: 768px)" srcset="./images/index/result/cat-after-tablet@1x.png 1x, ./images/index/result/cat-after-tablet@2x.png 2x" type="image/png" width="560" height="512">
                     <img class="example__slide example__slide--thin-cat" src="./images/index/result/cat-after-mobail@1x.png" srcset="./images/index/result/cat-after-mobail@2x.png" width="280" height="256" alt="Кот до того как начал питаться нашим кормом">
                   </picture>
                 </li>
@@ -186,26 +186,45 @@
       <section class="contact">
         <div class="contact__wrapper">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <a class="logo-main-text footer__logo-text" href="index.html">logo</a>
+          <a class="contact__logo-link footer__logo-text" href="index.html">
+            <span class="visually-hidden">Логотип сайта</span>
+            <svg class="contact__logo-icon" width="128" height="24">
+              <use href="./icons/stack.svg#logo-footer"></use>
+            </svg>
+          </a>
           <ul class="contact__social-list list-reset">
             <li class="contact__social-item">
               <a class="contact__social-link link contact__social-link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
                 <span class="visually-hidden">Мы в vk</span>
-                <svg width="27" height="17">
-                  <use href="./icons/vkontakte.svg#vkontacte"></use>
+                <svg class="contact__social-icon contact__social-icon--vk" width="27" height="17">
+                  <use href="./icons/stack.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="contact__social-item">
               <span class="visually-hidden">Мы на youtube</span>
-              <a class="contact__social-link link contact__social-link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener noreferrer">youtube</a>
+              <a class="contact__social-link link contact__social-link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden">Мы на youtube</span>
+                <svg class="contact__social-icon contact__social-icon--youtube" width="24" height="19">
+                  <use href="./icons/stack.svg#youtube"></use>
+                </svg>
+              </a>
             </li>
             <li class="contact__social-item">
-              <span class="visually-hidden">Мы в телеграм</span>
-              <a class="contact__social-link link contact__social-link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer">telegram</a>
+              <a class="contact__social-link link contact__social-link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden">Мы в телеграм</span>
+                <svg class="contact__social-icon contact__social-icon--telegram" width="20" height="17">
+                  <use href="./icons/stack.svg#telegram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-          <a class="logo-additional" href="#" target="_blank" rel="noopener noreferrer">html</a>
+          <a class="contact__logo-additional-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="contact__logo-additional-text text">HTML Academy</span>
+            <svg class="contact__logo-additional-icon" width="27" height="34">
+              <use href="./icons/stack.svg#htmlacademy-logo"></use>
+            </svg>
+          </a>
         </div>
       </section>
     </footer>

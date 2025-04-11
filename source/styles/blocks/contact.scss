@@ -3,10 +3,35 @@
 }
 
 .contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
+.contact__logo-icon {
+  margin-bottom: 20px;
+}
+
 .contact__social-list {
+  display: flex;
+  justify-content: center;
   border-top: 1px solid $special-grey-ligth;
   border-bottom: 1px solid $special-grey-ligth;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact__social-item {
+  padding: 20px 12px;
+}
+
+.contact__logo-additional-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact__logo-additional-text {
+  align-self: center;
 }

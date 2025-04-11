@@ -1,9 +1,23 @@
+.additions {
+  position: relative;
+
+  &::before {
+    content: "";
+    border: 1px solid #68b738;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    min-width: calc(100% - 285px);
+  }
+}
+
 .additions__wrapper {
   padding: 20px;
 }
 
 .additions__title {
   margin-bottom: 36px;
+  background-color: #ffffff;
 }
 
 .additions__card {
@@ -16,6 +30,7 @@
 
 .additions__card:first-child {
   border-top: 1px solid $special-grey;
+  padding: 13px 0;
 }
 
 .additions__card-title {
@@ -68,8 +83,6 @@
     display: block;
     height: 20px;
     width: 20px;
-    background-image: url("../../icons/gift.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    mask-image: url("../../icons/gift.svg#gift");
   }
 }

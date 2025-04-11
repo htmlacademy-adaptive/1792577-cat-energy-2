@@ -13,4 +13,45 @@
   min-height: 60px;
   background-color: $basic-green;
   margin-right: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $special-color-white;
+    top: 10px;
+    left: 10px;
+  }
+
+  &--list::after {
+    content: "";
+    mask-image: url("../../icons/stack.svg#list");
+    width: 30px;
+    height: 32px;
+  }
+
+  &--powder::after {
+    content: "";
+    position: absolute;
+    mask-image: url("../../icons/stack.svg#powder");
+    width: 26px;
+    height: 29px;
+  }
+
+  &--cutlery::after {
+    content: "";
+    position: absolute;
+    mask-image: url("../../icons/stack.svg#cutlery");
+    width: 25px;
+    height: 30px;
+  }
+
+  &--scales::after {
+    content: "";
+    position: absolute;
+    mask-image: url("../../icons/stack.svg#scales");
+    width: 26px;
+    height: 31px;
+    background-color: $special-color-white;
+  }
 }
