@@ -3,11 +3,16 @@
   font-weight: 400;
   color: $special-color-black;
   margin: 0;
-}
 
-.title-main {
-  font-size: 36px;
-  line-height: 36px;
+  &--main {
+    font-size: 36px;
+    line-height: 36px;
+
+    @media (min-width: $tablet-widht) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
 }
 
 .title-section {
@@ -19,4 +24,19 @@
   font-size: 24px;
   line-height: 24px;
   color: $special-color-black;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      border: 1px solid #68b738;
+      position: absolute;
+      top: 44px;
+      left: 0;
+      width: 30px;
+    }
+  }
 }
