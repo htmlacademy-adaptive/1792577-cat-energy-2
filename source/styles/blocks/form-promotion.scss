@@ -35,8 +35,14 @@
 }
 
 .form-promotion__container-input {
+  margin: auto;
+
   @media (min-width: $tablet-widht) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-widht) {
+    max-width: 752px;
   }
 }
 
