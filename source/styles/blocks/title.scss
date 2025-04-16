@@ -18,6 +18,11 @@
 .title-section {
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .title-section-catalog {

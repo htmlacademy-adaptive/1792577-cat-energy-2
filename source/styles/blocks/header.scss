@@ -127,6 +127,14 @@
     justify-content: flex-end;
     background-color: transparent;
   }
+
+  @media (min-width: $desktop-widht) {
+    font-size: 20px;
+
+    &--index {
+      color: $special-color-white;
+    }
+  }
 }
 
 .header__nav-item:first-child {
@@ -153,6 +161,12 @@
     &--active {
       border-bottom: 2px solid $basic-green;
       padding-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    &--active-index {
+      border-color: $special-color-white;
     }
   }
 }

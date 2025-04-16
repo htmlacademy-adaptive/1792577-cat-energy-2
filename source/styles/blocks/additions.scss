@@ -30,6 +30,12 @@
   background-color: #ffffff;
 }
 
+.additions__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+}
+
 .additions__card-list {
   @media (min-width: $tablet-widht) {
     margin-bottom: 20px;
@@ -37,6 +43,12 @@
     &:not(:last-child) {
       border: 1px solid $special-grey;
       box-sizing: border-box;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    &:not(:last-child) {
+      border: none;
     }
   }
 }
@@ -57,6 +69,12 @@
       border-bottom: none;
     }
   }
+
+  @media (min-width: $desktop-widht) {
+    &:last-child {
+      border-bottom: 1px solid $special-grey;
+    }
+  }
 }
 
 .additions__card:first-child {
@@ -64,6 +82,10 @@
 
   @media (min-width: $tablet-widht) {
     border-top: none;
+  }
+
+  @media (min-width: $desktop-widht) {
+    border-top: 1px solid $special-grey;
   }
 }
 
@@ -138,6 +160,7 @@
     background-image:
       linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
       url("../../images/catalog/cat-backpack-desktop@1x.jpg");
+    max-height: 288px;
 
     @media (min-resolution: 2dpi) {
       background-image:
