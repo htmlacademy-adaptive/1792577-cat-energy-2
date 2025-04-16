@@ -1,14 +1,67 @@
 .greetings__wrapper {
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-widht) {
+    margin-bottom: 150px;
+  }
+}
+
+.greetings__container {
   padding: 27px 20px 20px;
   background-image:
-    linear-gradient(0deg, rgba(255, 255, 255, 1) 42%, rgba(104, 183, 56, 0.85) 42%),
+    linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(104, 183, 56, 0.85) 0%),
     url("../../images/index/background/index-background-mobail@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100%, contain;
+  min-width: 100%;
+  min-height: 302px;
+  background-size: 100% auto, cover;
+  background-position: center;
+  box-sizing: border-box;
+  margin-bottom: -100px;
+
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(104, 183, 56, 0.85) 0%), url("../../images/index/background/index-background-mobail@2x.jpg");
+  }
+
+  @media (min-width: $tablet-widht) {
+    background-image: none;
+    padding-left: 100px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    position: absolute;
+    min-width: 50%;
+    min-height: 684px;
+    right: 0;
+    top: -72px;
+    background-image:
+      linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(104, 183, 56, 0.85) 0%),
+      url("../../images/index/background/index-background-desktop@1x.jpg");
+
+    @media (min-resolution: 192dpi) {
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(104, 183, 56, 0.85) 0%), url("../../images/index/background/index-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.greetings__container-text {
+  @media (min-width: $desktop-widht) {
+    position: absolute;
+    top: 100px;
+    right: 1350px;
+  }
 }
 
 .greetings__title {
   color: $special-color-white;
+
+  @media (min-width: $tablet-widht) {
+    color: $special-color-black;
+  }
 }
 
 .greetings__text {
@@ -18,12 +71,31 @@
   line-height: 18px;
   color: $special-color-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-widht) {
+    color: $special-color-black;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .greetings__img {
   z-index: 1;
+
+  @media (min-width: $desktop-widht) {
+    position: absolute;
+    left: 683px;
+  }
 }
 
 .greetings__button {
   padding: 10px 64px;
+
+  @media (min-width: $tablet-widht) {
+    padding: 10px 26px;
+    position: absolute;
+    top: 250px;
+    left: 145px;
+    z-index: 1;
+  }
 }

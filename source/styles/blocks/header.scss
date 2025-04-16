@@ -4,13 +4,36 @@
   grid-template-columns: 2fr 1fr;
   align-items: center;
   padding: 13px 20px 21px;
+
+  @media (min-width: $tablet-widht) {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+
+  @media (min-width: $tablet-widht) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 174px;
+  }
 }
+
+.header__logo-text {
+  position: relative;
+  left: 40%;
+
+  @media (min-width: $tablet-widht) {
+    position: relative;
+    left: 0;
+  }
+}
+
 
 .header__nav {
   font-family: $oswald-family;
@@ -18,6 +41,10 @@
 
 .header__buttons {
   justify-self: flex-end;
+
+  @media (min-width: $tablet-widht) {
+    display: none;
+  }
 }
 
 .header__button {
@@ -26,6 +53,10 @@
   height: 35px;
   border: transparent;
   background-color: transparent;
+
+  @media (min-width: $tablet-widht) {
+    display: none;
+  }
 }
 
 .header__inner {
@@ -85,14 +116,57 @@
   text-transform: uppercase;
   text-align: center;
   z-index: 1;
+
+  @media (min-width: $tablet-widht) {
+    display: flex;
+    position: relative;
+    top: auto;
+    font-size: 18px;
+    line-height: 24px;
+    min-width: 437px;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-widht) {
+    font-size: 20px;
+
+    &--index {
+      color: $special-color-white;
+    }
+  }
 }
 
 .header__nav-item:first-child {
   border-top: 1px solid $special-grey-ligth;
+
+  @media (min-width: $tablet-widht) {
+    border: none;
+  }
 }
 
 .header__nav-item {
   padding: 24px 5px;
   border-bottom: 1px solid $special-grey-ligth;
-  width: 100%;
+
+
+  @media (min-width: $tablet-widht) {
+    border: none;
+    padding: 10px 16px;
+  }
+}
+
+.header__nav-link {
+  @media (min-width: $tablet-widht) {
+    &--active {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    &--active-index {
+      border-color: $special-color-white;
+    }
+  }
 }

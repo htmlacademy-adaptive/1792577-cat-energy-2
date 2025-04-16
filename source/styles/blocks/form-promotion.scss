@@ -15,11 +15,29 @@
   padding: 20px;
 }
 
+
+.form-promotion__container {
+  @media (min-width: $tablet-widht) {
+    padding: 66px 68px 80px;
+  }
+}
+
 .form-promotion__text {
   font-size: 16px;
   line-height: 24px;
   color: $special-color-black;
   text-align: center;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.form-promotion__container-input {
+  @media (min-width: $tablet-widht) {
+    display: flex;
+  }
 }
 
 .form-promotion__input {
@@ -32,6 +50,10 @@
   margin-bottom: 16px;
   border: 1px solid $special-grey;
   border-radius: 1px;
+
+  @media (min-width: $tablet-widht) {
+    margin-bottom: 0;
+  }
 }
 
 .form-promotion__input::placeholder {

@@ -1,10 +1,35 @@
 .promo__wrapper {
   padding: 20px;
+
+  @media (min-width: $tablet-widht) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 110px;
+  }
+}
+
+.promo__list {
+  @media (min-width: $tablet-widht) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    display: flex;
+  }
 }
 
 .promo__item {
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop-widht) {
+    flex-direction: column;
+  }
 }
 
 .promo__icon {
@@ -53,5 +78,42 @@
     width: 26px;
     height: 31px;
     background-color: $special-color-white;
+  }
+
+  @media (min-width: $tablet-widht) {
+    min-width: 80px;
+    min-height: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      font-family: $oswald-family;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      z-index: -1;
+      bottom: -115px;
+      left: 175px;
+    }
+
+    &--list::before {
+      content: "1";
+    }
+
+    &--powder::before {
+      content: "2";
+    }
+
+    &--cutlery::before {
+      content: "3";
+    }
+
+    &--scales::before {
+      content: "4";
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    align-self: flex-start;
   }
 }

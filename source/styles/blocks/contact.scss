@@ -7,6 +7,11 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+
+  @media (min-width: $tablet-widht) {
+    padding: 30px;
+    flex-direction: row;
+  }
 }
 
 .contact__logo-icon {
@@ -30,6 +35,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @media (min-width: $tablet-widht) {
+    max-width: 168px;
+  }
 }
 
 .contact__logo-additional-text {
