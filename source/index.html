@@ -11,7 +11,7 @@
   <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <script src="scripts/index.js" defer="defer"></script>
+
 </head>
 
 <body class="page__body">
@@ -179,7 +179,7 @@
     </main>
     <footer class="footer">
       <section class="cooperation">
-        <div class="cooperation__wrapper">
+        <div class="cooperation__wrapper-text">
           <h2 class="cooperation__title title">
             Приглашаем <br>
             к сотрудничеству <br>
@@ -191,6 +191,7 @@
             <span class="cooperation__text-city">Санкт-Петербург</span>
           </p>
         </div>
+        <div class="cooperation__map" id="map"></div>
       </section>
       <section class="contact">
         <div class="contact__wrapper">
@@ -238,6 +239,8 @@
       </section>
     </footer>
   </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f744a2c0-e2ea-421d-a839-f13515eb267e" defer></script>
+  <script src="scripts/index.js" defer="defer"></script>
 </body>
 
 </html>

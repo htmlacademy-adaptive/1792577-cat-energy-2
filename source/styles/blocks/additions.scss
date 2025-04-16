@@ -31,9 +31,11 @@
 }
 
 .additions__container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 80px;
+  @media (min-width: $desktop-widht) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+  }
 }
 
 .additions__card-list {
@@ -67,6 +69,12 @@
 
     &:last-child {
       border-bottom: none;
+    }
+
+    @media (min-width: $desktop-widht) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: space-between;
     }
   }
 
@@ -124,6 +132,11 @@
   padding: 10px;
   width: 100%;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-widht) {
+    max-width: 244px;
+    grid-column: 4/5;
+  }
 }
 
 .additions__present {

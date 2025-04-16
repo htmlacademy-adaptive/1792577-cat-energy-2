@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* в этот файл добавляет скрипты*/
 
 // eslint-disable-next-line check-file/folder-naming-convention
@@ -68,3 +69,26 @@ if (sliderForm) {
     sliderAfter.style.clipPath = 'inset(0 0 0 50%)';
   });
 }
+
+
+const ymaps = window.ymaps;
+
+ymaps.ready(() => {
+  const mapElement1 = document.getElementById('map');
+  if (mapElement1) {
+    const myMap1 = new ymaps.Map(mapElement1, {
+      center: [59.938679, 30.3230044],
+      zoom: 15.5,
+      controls: []
+    });
+
+    const myPlacemark1 = new ymaps.Placemark(myMap1.getCenter(), {}, {
+      iconLayout: 'default#image',
+      iconImageHref: '../images/logo-map.png',
+      iconImageSize: [57, 53],
+      iconImageOffset: [-26, -42]
+    });
+
+    myMap1.geoObjects.add(myPlacemark1);
+  }
+});

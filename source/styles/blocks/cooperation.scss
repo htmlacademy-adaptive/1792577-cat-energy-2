@@ -1,4 +1,4 @@
-.cooperation__wrapper {
+.cooperation__wrapper-text {
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -41,3 +41,19 @@
     margin-top: 1em;
   }
 }
+
+.cooperation__wrapper-map {
+  position: relative;
+}
+
+.cooperation__map {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-widht) {
+    min-height: 400px;
+  }
+}
+
