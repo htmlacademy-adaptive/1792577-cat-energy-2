@@ -82,10 +82,20 @@ ymaps.ready(() => {
       controls: []
     });
 
+    const screenWidth = window.innerWidth;
+
+    let iconSize;
+
+    if (screenWidth >= 768) {
+      iconSize = [113, 106];
+    } else {
+      iconSize = [57, 53];
+    }
+
     const myPlacemark1 = new ymaps.Placemark(myMap1.getCenter(), {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../images/logo-map.png',
-      iconImageSize: [57, 53],
+      iconImageHref: '../../icons/stack.svg#logo-map',
+      iconImageSize: iconSize,
       iconImageOffset: [-26, -42]
     });
 
