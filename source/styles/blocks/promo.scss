@@ -1,12 +1,23 @@
 .promo__wrapper {
   padding: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-widht) {
-    padding: 30px;
+    padding: 30px 30px 26px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-widht) {
     padding: 110px;
+    margin-bottom: -5px;
+  }
+}
+
+.promo__title {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-widht) {
+    margin-bottom: 72px;
   }
 }
 
@@ -14,21 +25,25 @@
   @media (min-width: $tablet-widht) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 150px;
-    padding-bottom: 42px;
+    gap: 120px 60px;
+    counter-reset: benefit 0;
   }
 
   @media (min-width: $desktop-widht) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .promo__item {
   display: flex;
   align-items: center;
+  margin-bottom: -2px;
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $tablet-widht) {
     flex-direction: column;
+    align-items: start;
+    counter-increment: benefit 1;
   }
 }
 
@@ -44,30 +59,30 @@
     content: "";
     position: absolute;
     background-color: $special-color-white;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
   }
 
   &--list::after {
     content: "";
     mask-image: url("../../icons/stack.svg#list");
-    width: 30px;
-    height: 32px;
+    width: 31px;
+    height: 30px;
   }
 
   &--powder::after {
     content: "";
     position: absolute;
     mask-image: url("../../icons/stack.svg#powder");
-    width: 26px;
-    height: 29px;
+    width: 31px;
+    height: 30px;
   }
 
   &--cutlery::after {
     content: "";
     position: absolute;
     mask-image: url("../../icons/stack.svg#cutlery");
-    width: 25px;
+    width: 29px;
     height: 30px;
   }
 
@@ -75,7 +90,7 @@
     content: "";
     position: absolute;
     mask-image: url("../../icons/stack.svg#scales");
-    width: 26px;
+    width: 30px;
     height: 31px;
     background-color: $special-color-white;
   }
@@ -83,37 +98,32 @@
   @media (min-width: $tablet-widht) {
     min-width: 80px;
     min-height: 80px;
+    margin-bottom: 15px;
+
+    &::after {
+      top: 27px;
+      left: 24px;
+    }
 
     &::before {
-      content: "";
+      content: counter(benefit);
       position: absolute;
       font-family: $oswald-family;
       font-size: 280px;
       line-height: 280px;
       color: $basic-grey;
       z-index: -1;
-      bottom: -115px;
-      left: 175px;
-    }
-
-    &--list::before {
-      content: "1";
-    }
-
-    &--powder::before {
-      content: "2";
-    }
-
-    &--cutlery::before {
-      content: "3";
-    }
-
-    &--scales::before {
-      content: "4";
+      bottom: -161px;
+      left: 113px;
     }
   }
+
 
   @media (min-width: $desktop-widht) {
     align-self: flex-start;
   }
+}
+
+.promo__card-text {
+  max-width: 260px;
 }

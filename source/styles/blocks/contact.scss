@@ -9,35 +9,86 @@
   padding: 20px;
 
   @media (min-width: $tablet-widht) {
-    padding: 30px;
     flex-direction: row;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 91px;
+    padding: 55px 30px;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 63px 110px;
   }
 }
 
-.contact__logo-icon {
-  margin-bottom: 20px;
+.contact__logo-link {
+  padding: 20px 20px 15px;
+
+  @media (min-width: $tablet-widht) {
+    // padding: 11px;
+  }
 }
 
 .contact__social-list {
-  display: flex;
   justify-content: center;
   border-top: 1px solid $special-grey-ligth;
   border-bottom: 1px solid $special-grey-ligth;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 23px 13px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 181px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-widht) {
+    border: none;
+    padding: 0;
+    gap: 0 4px;
+  }
 }
 
-.contact__social-item {
-  padding: 20px 12px;
+.contact__social-link {
+  padding: 13px;
+
+  &:first-child {
+    padding: 12px;
+  }
+}
+
+.contact__social-icon {
+  width: 28px;
+  height: 22px;
+
+  &--vk {
+    width: 27px;
+    height: 17px;
+  }
+
+  &--youtube {
+    width: 24px;
+    height: 19px;
+  }
+
+  &--telegram {
+    width: 20px;
+    height: 18px;
+  }
 }
 
 .contact__logo-additional-link {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 21px 10px;
 
   @media (min-width: $tablet-widht) {
-    max-width: 168px;
+    padding: 0;
+    display: flex;
+    gap: 23px;
+    justify-content: end;
   }
 }
 

@@ -25,7 +25,7 @@
             <img class="header__logo-img" src="./images/logo-header/logo-header-img/logo-mobile.svg" width="33" height="38" alt="Логотип-картинка сайта">
           </picture>
           <picture>
-            <source media="(min-width: 768px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo-header/logo-header-text/logo-text-desktop.svg">
+            <source media="(min-width: 768px)" width="101" height="28" type="image/svg+xml" srcset="./images/logo-header/logo-header-text/logo-text-desktop.svg">
             <img class="header__logo-text" src="./images/logo-header/logo-header-text/logo-text-mobail.svg" width="101" height="18" alt="Логотип-текст сайта">
           </picture>
         </a>
@@ -39,13 +39,10 @@
             <span class="visually-hidden">Закрыть навигацию</span></button>
         </div>
         <ul class="header__nav-list header__nav-list--index list-reset">
-          <li class="header__nav-item"><a class="header__nav-link header__nav-link--active header__nav-link--active-index link" href="index.html">Главная</a></li>
+          <li class="header__nav-item"><a class="header__nav-link header__nav-link--active  link" href="index.html">Главная</a></li>
           <li class="header__nav-item"><a class="header__nav-link link" href="catalog.html">Каталог продукции</a></li>
           <li class="header__nav-item"><a class="header__nav-link link" href="#">Подбор программы</a></li>
         </ul>
-        <nav class="header__nav">
-
-        </nav>
       </div>
     </header>
     <main class="main">
@@ -59,11 +56,13 @@
                 <p class="greetings__text">Занялся собой? Займись котом!</p>
               </div>
             </div>
-            <picture>
-              <source media="(min-width: 1440px)" srcset="./images/index/feed/feed-index-desktop@1x.png, ./images/index/feed/feed-index-desktop@2x.png 2x" type="image/png" width="552" height="499">
-              <source media="(min-width: 768px)" srcset="./images/index/feed/feed-index-tablet@1x.png, ./images/index/feed/feed-index-tablet@2x.png 2x" type="image/png" width="709" height="608">
-              <img class="greetings__img" src="./images/index/feed/feed-index-mobile@1x.png" srcset="./images/index/feed/feed-index-mobile@2x.png" width="280" height="270" alt="Корм Cat Energy со вкусом курицы">
-            </picture>
+            <div class="greetings__img-container">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./images/index/feed/feed-index-desktop@1x.png, ./images/index/feed/feed-index-desktop@2x.png 2x" type="image/png" width="552" height="499">
+                <source media="(min-width: 768px)" srcset="./images/index/feed/feed-index-tablet@1x.png, ./images/index/feed/feed-index-tablet@2x.png 2x" type="image/png" width="709" height="608">
+                <img class="greetings__img" src="./images/index/feed/feed-index-mobile@1x.png" srcset="./images/index/feed/feed-index-mobile@2x.png" width="280" height="270" alt="Корм Cat Energy со вкусом курицы">
+              </picture>
+            </div>
             <button class="greetings__button button" type="button">Подобрать программу</button>
           </div>
         </section>
