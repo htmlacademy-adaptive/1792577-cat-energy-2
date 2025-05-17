@@ -1,5 +1,13 @@
+.cooperation {
+  position: relative;
+}
+
+.cooperation--background {
+  background-color: $basic-grey;
+}
+
 .cooperation__wrapper-text {
-  padding: 20px;
+  padding: 26px 23px 26px 20px;
   display: flex;
   justify-content: space-between;
 
@@ -9,6 +17,18 @@
     &--catalog {
       background-color: $basic-grey;
     }
+  }
+
+
+  @media (min-width: $desktop-widht) {
+    position: absolute;
+    min-width: 565px;
+    z-index: 1;
+    background-color: $special-color-white;
+    padding: 60px 77px 60px 81px;
+    box-sizing: border-box;
+    left: 109px;
+    top: 93px;
   }
 }
 
@@ -22,10 +42,14 @@
     line-height: 26px;
     width: 30%;
   }
+
+  @media (min-width: $desktop-widht) {
+    width: 40%;
+  }
 }
 
 .cooperation__text {
-  line-height: 18px;
+  line-height: 20px;
   margin: 0;
 
   @media (min-width: $tablet-widht) {
@@ -33,12 +57,21 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-widht) {
+    text-align: start;
   }
 }
 
 .cooperation__text-city {
   @media (min-width: $tablet-widht) {
-    margin-top: 1em;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    margin-top: 18px;
   }
 }
 
@@ -50,9 +83,30 @@
   position: relative;
   display: block;
   width: 100%;
-  min-height: 362px;
+  max-height: 362px;
+  background-image: url("../../images/map-mobail@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dpi) {
+    background-image: url("../../images/map-mobail@2x.jpg");
+  }
 
   @media (min-width: $tablet-widht) {
+    background-image: url("../../images/map-tablet@1x.jpg");
     min-height: 400px;
+
+    @media (min-resolution: 2dpi) {
+      background-image: url("../../images/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    background-image: url("../../images/map-desktop@1x.jpg");
+    min-height: 400px;
+
+    @media (min-resolution: 2dpi) {
+      background-image: url("../../images/map-desktop@2x.jpg");
+    }
   }
 }

@@ -1,32 +1,62 @@
 .example {
   @media (min-width: $desktop-widht) {
     display: flex;
-    background: linear-gradient(to bottom, $special-color-white 30%, $special-grey-medium 30%, $special-grey-medium 100%);
+    background: linear-gradient(to bottom, $special-color-white 24%, $special-grey-medium 24%, $special-grey-medium 100%);
   }
 }
 
 .example__wrapper {
-  padding: 20px;
+  padding: 25px 20px;
   background-color: $special-grey-medium;
 
   @media (min-width: $tablet-widht) {
     background-color: transparent;
     border-top: 2px solid $basic-green-border;
-    padding: 30px;
+    padding: 44px 30px 30px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-widht) {
     border: none;
-    padding: 110px;
+    padding: 10px 110px;
+    margin-bottom: 32px;
   }
 }
 
 .example__title {
-  margin-bottom: 149px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-widht) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__text-container {
   max-width: 436px;
+
+  @media (min-width: $tablet-widht) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-widht) {
+    max-width: 66%;
+  }
+}
+
+.example__text {
+  margin: 0 0 4px;
+
+  @media (min-width: $tablet-widht) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    margin-bottom: 53px;
+  }
 }
 
 .example__addition {
@@ -41,8 +71,8 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-widht) {
-    min-width: 162px;
-    min-height: 77px;
+    min-width: 161px;
+    min-height: 71px;
   }
 }
 
@@ -64,9 +94,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  gap: 31px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-widht) {
     gap: 45px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    margin-bottom: 30px;
   }
 }
 
@@ -86,8 +122,8 @@
     text-transform: lowercase;
     color: $special-dark-grey;
     position: absolute;
-    top: 47px;
-    left: 50%;
+    top: 46px;
+    left: 49%;
     transform: translateX(-50%);
     background-color: $special-grey-medium;
     padding: 0 10px;
@@ -101,7 +137,7 @@
     text-transform: lowercase;
     color: $special-dark-grey;
     position: absolute;
-    top: 47px;
+    top: 46px;
     left: 50%;
     transform: translateX(-50%);
     background-color: $special-grey-medium;
@@ -119,7 +155,7 @@
       font-size: 14px;
       line-height: 14px;
       white-space: nowrap;
-      top: 65px;
+      top: 61px;
     }
   }
 
@@ -140,19 +176,22 @@
   @media (min-width: $tablet-widht) {
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-top: -19px;
+    gap: 9px;
   }
 
   @media (min-width: $desktop-widht) {
+    display: flex;
+    flex-direction: row;
     grid-column: 1/-1;
     grid-row: 2/3;
     text-align: start;
+    gap: 66px;
   }
 }
-
-.example__price-sum {
-  padding-left: 10px;
-}
-
 
 .example__sliders {
   position: relative;
@@ -162,15 +201,22 @@
 }
 
 .example__slider {
+  background-color: $special-grey-medium;
+  padding: 0 0 35px;
+
   @media (min-width: $tablet-widht) {
-    background: linear-gradient(to bottom, $special-color-white 30%, $special-grey-medium 30%, $special-grey-medium 100%);
-    padding-bottom: 50px;
+    background: linear-gradient(to bottom, $special-color-white 24%, $special-grey-medium 24%, $special-grey-medium 100%);
+    padding-bottom: 96px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    background: transparent;
   }
 }
 
 .example__sliders-container {
   position: relative;
-  min-width: 280px;
+  max-width: 280px;
   min-height: 256px;
   margin: 0 auto;
 
@@ -198,6 +244,18 @@
   width: 100%;
   height: 100%;
   display: flex;
+  position: absolute;
+  top: -5px;
+  background-color: $special-grey-medium;
+
+  @media (min-width: $tablet-widht) {
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-widht) {
+    top: 14px;
+    right: 110px;
+  }
 }
 
 .example__slider-item::after {
@@ -230,7 +288,7 @@
 .example__slider-button {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 48%;
   width: 40px;
   height: 40px;
   background-color: $special-color-white;
@@ -256,12 +314,29 @@
   &::after {
     content: "";
     position: absolute;
-    top: -108px;
+    top: -111px;
     left: 50%;
     width: 4px;
-    height: 108px;
+    height: 111px;
     background-color: $special-grey-2;
     translate: -50% 0;
-    box-shadow: 0 144px 0 0 $special-grey-2;
+    box-shadow: 0 147px 0 0 $special-grey-2;
+    border-radius: 3px;
+  }
+
+  @media (min-width: $tablet-widht) {
+    top: 49%;
+    left: 50%;
+
+    &::after {
+      height: 238px;
+      top: -238px;
+      box-shadow: 0 274px 0 0 $special-grey-2;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    top: 53%;
+    left: 170px;
   }
 }

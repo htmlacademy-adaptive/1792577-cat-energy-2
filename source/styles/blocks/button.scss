@@ -9,4 +9,9 @@
   color: $special-color-white;
   border: transparent;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0;
 
   @media (min-width: $desktop-widht) {
-    margin-bottom: 150px;
+    margin-bottom: 14px;
   }
 }
 
@@ -29,15 +30,15 @@
 
   @media (min-width: $tablet-widht) {
     background-image: none;
-    padding-left: 100px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-widht) {
     position: absolute;
     min-width: 50%;
-    min-height: 684px;
+    min-height: 694px;
     right: 0;
-    top: -72px;
+    top: -172px;
     background-image:
       linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(104, 183, 56, 0.85) 0%),
       url("../../images/index/background/index-background-desktop@1x.jpg");
@@ -49,18 +50,30 @@
 }
 
 .greetings__container-text {
+  position: relative;
+
+  @media (min-width: $tablet-widht) {
+    padding-top: 37px;
+    margin-left: 119px;
+  }
+
   @media (min-width: $desktop-widht) {
     position: absolute;
-    top: 100px;
-    right: 1350px;
+    top: 187px;
+    right: 529px;
+    width: 100%;
   }
 }
 
 .greetings__title {
   color: $special-color-white;
+  text-align: center;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-widht) {
     color: $special-color-black;
+    text-align: start;
+    margin-bottom: 39px;
   }
 }
 
@@ -71,11 +84,23 @@
   line-height: 18px;
   color: $special-color-white;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-widht) {
     color: $special-color-black;
     font-size: 20px;
     line-height: 20px;
+    text-align: start;
+  }
+}
+
+.greetings__img-container {
+  margin: -35px auto -1px;
+  position: relative;
+
+  @media (min-width: $tablet-widht) {
+    margin: 35px auto -1px;
   }
 }
 
@@ -84,7 +109,8 @@
 
   @media (min-width: $desktop-widht) {
     position: absolute;
-    left: 683px;
+    left: -163px;
+    top: -64px;
   }
 }
 
@@ -92,10 +118,16 @@
   padding: 10px 64px;
 
   @media (min-width: $tablet-widht) {
-    padding: 10px 26px;
-    position: absolute;
-    top: 250px;
-    left: 145px;
     z-index: 1;
+    padding: 14px 27px;
+    position: absolute;
+    top: 266px;
+    left: 120px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    top: 284px;
+    left: 190px;
+    padding: 14px 28px;
   }
 }

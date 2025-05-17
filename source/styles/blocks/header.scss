@@ -3,12 +3,18 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  padding: 13px 20px 21px;
+  padding: 13px 20px 10px;
+  margin: auto;
 
   @media (min-width: $tablet-widht) {
     display: flex;
-    padding: 0 20px;
+    padding: 20px;
     justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 50px 97px 49px 100px;
   }
 }
 
@@ -24,13 +30,27 @@
   }
 }
 
+
+.header__logo-link {
+  @media (min-width: $tablet-widht) {
+    padding: 5px 10px;
+  }
+}
+
 .header__logo-text {
   position: relative;
-  left: 40%;
+  left: 3%;
+  top: 2px;
 
   @media (min-width: $tablet-widht) {
     position: relative;
     left: 0;
+  }
+
+  @media (min-width: $desktop-widht) {
+    width: 118px;
+    height: 21px;
+    left: 14px;
   }
 }
 
@@ -64,9 +84,9 @@
   border-top: 2px solid $special-color-black;
   border-bottom: 2px solid $special-color-black;
   width: 24px;
-  padding: 9px 0;
+  padding: 7px 0;
   top: 7px;
-  right: 5px;
+  right: 1px;
 
 
   &::after {
@@ -74,7 +94,7 @@
     position: absolute;
     border-bottom: 2px solid $special-color-black;
     width: 24px;
-    top: 8px;
+    top: 6px;
     right: 0;
   }
 }
@@ -119,6 +139,7 @@
 
   @media (min-width: $tablet-widht) {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     top: auto;
     font-size: 18px;
@@ -130,6 +151,7 @@
 
   @media (min-width: $desktop-widht) {
     font-size: 20px;
+    max-width: 506px;
 
     &--index {
       color: $special-color-white;
@@ -160,7 +182,7 @@
   @media (min-width: $tablet-widht) {
     &--active {
       border-bottom: 2px solid $basic-green;
-      padding-bottom: 10px;
+      padding-bottom: 4px;
     }
   }
 
