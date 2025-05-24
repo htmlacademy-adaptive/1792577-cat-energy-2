@@ -94,7 +94,7 @@ ymaps.ready(() => {
 
     const myPlacemark1 = new ymaps.Placemark(myMap1.getCenter(), {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../../icons/stack.svg#logo-map',
+      iconImageHref: '../images/logo-map.svg',
       iconImageSize: iconSize,
       iconImageOffset: [-26, -42]
     });

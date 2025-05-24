@@ -1,6 +1,12 @@
 .catalog__wrapper {
   margin-bottom: 44px;
+
+  @media (min-width: $desktop-widht) {
+    padding: 0 80px;
+    margin-bottom: 40px;
+  }
 }
+
 
 .catalog__title {
   line-height: 20px;
@@ -13,6 +19,10 @@
     line-height: 60px;
     padding: 15px 30px 48px;
     margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    margin-bottom: 25px;
   }
 }
 
@@ -31,10 +41,16 @@
     padding-right: 0;
     padding-top: 18px;
   }
+
+  @media (min-width: $desktop-widht) {
+    padding-top: 8px;
+    margin-bottom: 20px;
+  }
 }
 
+
 .catalog__card--more .catalog__card-title {
-  padding: 28px 10px 12px;
+  padding: 28px 10px 14px;
   margin-bottom: -3px;
 }
 
@@ -45,6 +61,12 @@
 
   @media (min-width: $tablet-widht) {
     padding: 0 50px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 0 35px;
   }
 }
 
@@ -90,7 +112,7 @@
 
   @media (min-width: $desktop-widht) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    gap: 52px 80px;
   }
 }
 
@@ -127,6 +149,12 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-widht) {
+    min-height: 502px;
+    background: linear-gradient(#ffffff 17%, #f2f2f2 17% 100%);
+    padding: 20px 0 0;
+  }
 }
 
 .catalog__card-info {
@@ -147,6 +175,14 @@
   @media (min-width: $tablet-widht) {
     border-bottom: 1px solid $special-grey;
     padding: 6px 0 4px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 4.5px 2px 6px;
+
+    &:last-child {
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -183,6 +219,14 @@
   }
 }
 
+@media (min-width: $desktop-widht) {
+  .catalog__card-button--accent:hover,
+  .catalog__card-button--accent:active {
+    background-color: $special-grey-ligth;
+    color: $special-dark-grey;
+  }
+}
+
 
 .catalog__card--more {
   display: flex;
@@ -196,6 +240,11 @@
     margin-bottom: -1px;
     box-sizing: border-box;
     padding: 20px 0 39px;
+    min-height: 83%;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 20px 0;
   }
 }
 
@@ -238,6 +287,10 @@
       top: 28px;
     }
   }
+
+  @media (min-width: $desktop-widht) {
+    margin-bottom: 41px;
+  }
 }
 
 .catalog__card-title .catalog__card--more {
@@ -252,5 +305,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    margin-bottom: 70px;
   }
 }

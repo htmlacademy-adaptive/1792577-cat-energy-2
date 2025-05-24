@@ -49,4 +49,15 @@
       width: 28px;
     }
   }
+
+  @media (min-width: $desktop-widht) {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0;
+
+    &::before {
+      width: 68px;
+      top: 48px;
+    }
+  }
 }

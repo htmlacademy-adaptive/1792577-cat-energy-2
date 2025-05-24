@@ -15,3 +15,14 @@
     line-height: 26px;
   }
 }
+
+@media (min-width: $desktop-widht) {
+  .button:hover {
+    background-color: $basic-green-2;
+  }
+
+  .button:active {
+    background-color: $basic-green-2;
+    color: $color-active-white;
+  }
+}
