@@ -176,6 +176,9 @@
 
 .header__nav-list--no-js {
   display: block;
+  position: relative;
+  margin: -43px 0 55px;
+  grid-column: 1 / -1;
 }
 
 
