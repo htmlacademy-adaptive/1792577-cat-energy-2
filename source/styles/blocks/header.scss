@@ -15,6 +15,7 @@
 
   @media (min-width: $desktop-widht) {
     padding: 50px 97px 49px 100px;
+    margin-bottom: 1px;
   }
 }
 
@@ -30,10 +31,19 @@
   }
 }
 
-
 .header__logo-link {
   @media (min-width: $tablet-widht) {
     padding: 5px 10px;
+  }
+}
+
+@media (min-width: $desktop-widht) {
+  .header__logo-link:hover {
+    opacity: 0.7;
+  }
+
+  .header__logo:active {
+    opacity: 0.5;
   }
 }
 
@@ -159,6 +169,16 @@
   }
 }
 
+
+.header__nav-buttons--no-js {
+  display: none;
+}
+
+.header__nav-list--no-js {
+  display: block;
+}
+
+
 .header__nav-item:first-child {
   border-top: 1px solid $special-grey-ligth;
 
@@ -188,7 +208,19 @@
 
   @media (min-width: $desktop-widht) {
     &--active-index {
-      border-color: $special-color-white;
+      border-bottom: 2px solid $special-color-white;
     }
+  }
+}
+
+@media (min-width: $desktop-widht) {
+  .header__nav-list--index .header__nav-link:hover,
+  .header__nav-link:hover {
+    opacity: 0.7;
+  }
+
+  .header__nav-list--index .header__nav-link:active,
+  .header__nav-link:active {
+    opacity: 0.5;
   }
 }

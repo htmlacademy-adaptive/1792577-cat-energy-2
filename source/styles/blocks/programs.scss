@@ -169,6 +169,13 @@
   }
 }
 
+@media (min-width: $desktop-widht) {
+  .programs__card-link:active {
+    opacity: 0.3;
+    fill: currentColor;
+  }
+}
+
 .programs__card-icon {
   display: block;
   mask-image: url("../../icons/stack.svg#arrow-link");

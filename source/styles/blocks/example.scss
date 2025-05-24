@@ -1,11 +1,33 @@
 .example {
+  position: relative;
+  min-height: 600px;
+  box-sizing: border-box;
+}
+
+.example__background {
   @media (min-width: $desktop-widht) {
-    display: flex;
+    position: absolute;
+
     background: linear-gradient(to bottom, $special-color-white 24%, $special-grey-medium 24%, $special-grey-medium 100%);
+
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .example__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+
+  @media (min-width: $desktop-widht) {
+    flex-direction: row;
+  }
+}
+
+.example__wrapper-text {
   padding: 25px 20px;
   background-color: $special-grey-medium;
 
@@ -203,6 +225,7 @@
 .example__slider {
   background-color: $special-grey-medium;
   padding: 0 0 35px;
+  position: relative;
 
   @media (min-width: $tablet-widht) {
     background: linear-gradient(to bottom, $special-color-white 24%, $special-grey-medium 24%, $special-grey-medium 100%);
@@ -283,12 +306,13 @@
   left: 0;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .example__slider-button {
   position: absolute;
   left: 50%;
-  top: 48%;
+  top: 110px;
   width: 40px;
   height: 40px;
   background-color: $special-color-white;
@@ -325,7 +349,7 @@
   }
 
   @media (min-width: $tablet-widht) {
-    top: 49%;
+    top: 270px;
     left: 50%;
 
     &::after {
@@ -336,7 +360,31 @@
   }
 
   @media (min-width: $desktop-widht) {
-    top: 53%;
     left: 170px;
+    top: 263px;
+  }
+}
+
+@media (min-width: $desktop-widht) {
+  .example__slider-input:hover .example__slider-button {
+    border: 2px solid $basic-green;
+  }
+
+  .example__slider-input:hover .example__slider-button::before,
+  .example__slider-input:hover .example__slider-button::after {
+    background-color: $basic-green;
+    box-shadow: 0 273px 0 0 $basic-green;
+  }
+
+  .example__slider-input:active .example__slider-button {
+    border: 2px solid $basic-green;
+    opacity: 0.6;
+  }
+
+  .example__slider-input:active .example__slider-button::before,
+  .example__slider-input:active .example__slider-button::after {
+    background-color: $basic-green;
+    box-shadow: 0 273px 0 0 $basic-green;
+    opacity: 0.6;
   }
 }
