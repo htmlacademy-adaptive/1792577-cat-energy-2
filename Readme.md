@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Лилиана Леднёва](https://up.htmlacademy.ru/adaptive-individual/2/user/1792577).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
 
 ---
 

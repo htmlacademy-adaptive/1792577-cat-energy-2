@@ -1,0 +1,311 @@
+.additions {
+  position: relative;
+
+  &::before {
+    content: "";
+    border: 1px solid #68b738;
+    position: absolute;
+    top: 44px;
+    right: 0;
+    min-width: calc(100% - 288px);
+  }
+
+  @media (min-width: $tablet-widht) {
+    &::before {
+      min-width: calc(100% - 413px);
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    &::before {
+      top: 48px;
+      min-width: calc(100% - 528px);
+    }
+  }
+}
+
+.additions__wrapper {
+  padding: 26px 20px 21px;
+
+  @media (min-width: $tablet-widht) {
+    padding: 30px;
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 30px 110px;
+    margin-bottom: -24px;
+  }
+}
+
+.additions__title {
+  margin-bottom: 80px;
+  background-color: #ffffff;
+}
+
+.additions__container {
+  @media (min-width: $desktop-widht) {
+    display: grid;
+    grid-template-columns: 75% auto;
+    gap: 61px;
+  }
+}
+
+.additions__card-list {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-widht) {
+    margin-bottom: 69px;
+
+    &:not(:last-child) {
+      border: 1px solid $special-grey;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    &:not(:last-child) {
+      border: none;
+    }
+  }
+}
+
+.additions__card {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 14px;
+  margin: 0;
+  border-bottom: 1px solid $special-grey;
+  padding: 13px 0;
+
+
+  @media (min-width: $tablet-widht) {
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 37px 23px;
+    gap: 21px 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @media (min-width: $desktop-widht) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    &:last-child {
+      border-bottom: 1px solid $special-grey;
+    }
+  }
+}
+
+.additions__card:first-child {
+  border-top: 1px solid $special-grey;
+
+  @media (min-width: $tablet-widht) {
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-widht) {
+    border-top: 1px solid $special-grey;
+  }
+}
+
+.additions__card-title {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-dark-more-grey;
+  grid-column: 1/4;
+  margin-bottom: -1px;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $tablet-widht) {
+    padding: 26px 0;
+  }
+}
+
+
+.additions__card-cell-block {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-widht) {
+    grid-column: 2/-1;
+    display: grid;
+    justify-content: end;
+    padding-top: 2px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    grid-template-columns: 1fr;
+    grid-column: 2 / 3;
+    align-items: center;
+    padding: 5px 0 0 20px;
+  }
+}
+
+.additions__card-cell {
+  font-size: 14px;
+  line-height: 14px;
+  grid-column: 1/2;
+  padding: 0 2px 1px;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 2/3;
+
+    &:first-child {
+      padding-right: 49px;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    grid-column: 1/2;
+  }
+}
+
+.additions__card-cell-price {
+  grid-column: 2/3;
+
+  &::after {
+    content: "₽";
+    font-family: system-ui;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $tablet-widht) {
+    grid-column: 3/4;
+    padding-right: 5px;
+
+    &::after {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 0;
+  }
+}
+
+.additions__card-button {
+  grid-column: 1/4;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    max-width: 244px;
+    grid-column: 3/4;
+    height: fit-content;
+    align-self: center;
+    margin: 0 43px;
+  }
+}
+
+.additions__present {
+  display: flex;
+  background-image:
+    linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
+    url("../../images/catalog/cat-backpack-mobail@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  min-width: 100%;
+  min-height: 290px;
+
+  @media (min-resolution: 2dpi) {
+    background-image:
+      linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
+      url("../../images/catalog/cat-backpack-mobail@2x.jpg");
+  }
+
+  @media (min-width: $tablet-widht) {
+    flex-direction: row-reverse;
+    min-height: 200px;
+    background-image:
+      linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
+      url("../../images/catalog/cat-backpack-tablet@1x.jpg");
+
+    @media (min-resolution: 2dpi) {
+      background-image:
+        linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
+        url("../../images/catalog/cat-backpack-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    background-image:
+      linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
+      url("../../images/catalog/cat-backpack-desktop@1x.jpg");
+    max-height: 288px;
+
+    @media (min-resolution: 2dpi) {
+      background-image:
+        linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
+        url("../../images/catalog/cat-backpack-desktop@2x.jpg");
+    }
+  }
+}
+
+.additions__text {
+  display: flex;
+  align-self: flex-end;
+  position: relative;
+  color: $special-color-white;
+  text-align: center;
+  justify-content: center;
+  vertical-align: bottom;
+  padding: 28px 58px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    mask-image: url("../../icons/stack.svg#gift");
+    background-color: $special-color-white;
+    top: -101px;
+    justify-self: center;
+  }
+
+  @media (min-width: $tablet-widht) {
+    align-self: center;
+    text-align: left;
+    padding: 30px 127px;
+
+    &::before {
+      top: 13%;
+      left: -52%;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    text-align: center;
+    align-self: end;
+    padding: 10px 40px 28px;
+
+    &::before {
+      top: -124%;
+      left: 33%;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+.programs__wrapper {
+  padding: 20px;
+  margin-bottom: -39px;
+
+  @media (min-width: $tablet-widht) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 110px 110px 10px;
+  }
+}
+
+.programs__cards {
+  @media (min-width: $tablet-widht) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: -9px;
+  }
+}
+
+.programs__card {
+  padding: 30px 20px 18px;
+  background-color: $basic-grey;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-widht) {
+    padding: 75px 2px 59px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 75px 2px 63px;
+    margin-bottom: 0;
+  }
+}
+
+.programs__card-accent {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-green;
+  display: block;
+  position: absolute;
+  top: 24px;
+
+  &--hight::after {
+    content: "";
+    mask-image: url("../../icons/stack.svg#scinny-cat");
+    width: 36px;
+    height: 50px;
+    background-color: $special-color-black;
+    position: absolute;
+    top: -4px;
+    right: 7px;
+  }
+
+  &--mass::after {
+    content: "";
+    mask-image: url("../../icons/stack.svg#muscular-cat");
+    width: 67px;
+    height: 28px;
+    background-color: $special-color-black;
+    position: absolute;
+    top: 11px;
+    right: -10px;
+  }
+
+  @media (min-width: $tablet-widht) {
+    width: 200px;
+    height: 200px;
+    right: 63px;
+    top: 90px;
+
+    &--hight::after {
+      width: 147px;
+      height: 195px;
+      right: 26px;
+      top: -12px;
+    }
+
+    &--mass::after {
+      width: 268px;
+      height: 173px;
+      right: -34px;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 46px;
+
+    &--hight::after {
+      top: -5px;
+      right: 15px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--mass::after {
+      top: 21px;
+      right: -15px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+}
+
+
+.programs__card-title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 50px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 2px 0 0 212px;
+  }
+}
+
+.programs__card-text {
+  border-bottom: 1px solid $gray-accent;
+  padding: 23px 0 22px;
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-widht) {
+    padding-left: 50px;
+    max-width: 340px;
+    border: none;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 74px 50px 31px;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.programs__card-link {
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  align-items: anchor-center;
+
+
+  @media (min-width: $tablet-widht) {
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-widht) {
+  .programs__card-link:active {
+    opacity: 0.3;
+    fill: currentColor;
+  }
+}
+
+.programs__card-icon {
+  display: block;
+  mask-image: url("../../icons/stack.svg#arrow-link");
+  background-color: $special-color-black;
+  width: 29px;
+  height: 12px;
+  padding-left: 15px;
+
+  @media (min-width: $tablet-widht) {
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding-left: 46px;
+  }
+}

@@ -1,0 +1,17 @@
+.text-basic {
+  font-family: $lato-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-widht) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.text {
+  font-family: $lato-family;
+  color: $special-dark-grey;
+}

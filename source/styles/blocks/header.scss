@@ -1,5 +1,229 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.header__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 13px 20px 10px;
+  margin: auto;
+
+  @media (min-width: $tablet-widht) {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-widht) {
+    padding: 50px 97px 49px 100px;
+    margin-bottom: 1px;
+  }
+}
+
+.header__logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-widht) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 174px;
+  }
+}
+
+.header__logo-link {
+  @media (min-width: $tablet-widht) {
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: $desktop-widht) {
+  .header__logo-link:hover {
+    opacity: 0.7;
+  }
+
+  .header__logo:active {
+    opacity: 0.5;
+  }
+}
+
+.header__logo-text {
+  position: relative;
+  left: 3%;
+  top: 2px;
+
+  @media (min-width: $tablet-widht) {
+    position: relative;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-widht) {
+    width: 118px;
+    height: 21px;
+    left: 14px;
+  }
+}
+
+
+.header__nav {
+  font-family: $oswald-family;
+}
+
+.header__buttons {
+  justify-self: flex-end;
+
+  @media (min-width: $tablet-widht) {
+    display: none;
+  }
+}
+
+.header__button {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: transparent;
+  background-color: transparent;
+
+  @media (min-width: $tablet-widht) {
+    display: none;
+  }
+}
+
+.header__inner {
+  position: absolute;
+  border-top: 2px solid $special-color-black;
+  border-bottom: 2px solid $special-color-black;
+  width: 24px;
+  padding: 7px 0;
+  top: 7px;
+  right: 1px;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid $special-color-black;
+    width: 24px;
+    top: 6px;
+    right: 0;
+  }
+}
+
+.header__button--close {
+  display: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid $special-color-black;
+    width: 24px;
+    top: 15px;
+    right: 2px;
+    transform: rotate(47deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 1px solid $special-color-black;
+    width: 24px;
+    top: 15px;
+    right: 2px;
+    transform: rotate(-47deg);
+  }
+}
+
+.header__nav-list {
+  display: none;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: $special-color-white;
+  font-family: $oswald-family;
+  font-size: 20px;
+  line-height: 20px;
+  color: $special-color-black;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+
+  @media (min-width: $tablet-widht) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: auto;
+    font-size: 18px;
+    line-height: 24px;
+    min-width: 437px;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-widht) {
+    font-size: 20px;
+    max-width: 506px;
+
+    &--index {
+      color: $special-color-white;
+    }
+  }
+}
+
+
+.header__nav-buttons--no-js {
+  display: none;
+}
+
+.header__nav-list--no-js {
+  display: block;
+  position: relative;
+  margin: -43px 0 55px;
+  grid-column: 1 / -1;
+}
+
+
+.header__nav-item:first-child {
+  border-top: 1px solid $special-grey-ligth;
+
+  @media (min-width: $tablet-widht) {
+    border: none;
+  }
+}
+
+.header__nav-item {
+  padding: 24px 5px;
+  border-bottom: 1px solid $special-grey-ligth;
+
+
+  @media (min-width: $tablet-widht) {
+    border: none;
+    padding: 10px 16px;
+  }
+}
+
+.header__nav-link {
+  @media (min-width: $tablet-widht) {
+    &--active {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 4px;
+    }
+  }
+
+  @media (min-width: $desktop-widht) {
+    &--active-index {
+      border-bottom: 2px solid $special-color-white;
+    }
+  }
+}
+
+@media (min-width: $desktop-widht) {
+  .header__nav-list--index .header__nav-link:hover,
+  .header__nav-link:hover {
+    opacity: 0.7;
+  }
+
+  .header__nav-list--index .header__nav-link:active,
+  .header__nav-link:active {
+    opacity: 0.5;
+  }
 }
