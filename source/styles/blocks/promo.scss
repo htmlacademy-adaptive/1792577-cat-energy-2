@@ -1,9 +1,9 @@
 .promo__wrapper {
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 30px 26px;
+    padding: 34px 30px 26px;
     margin-bottom: 63px;
   }
 
@@ -14,14 +14,26 @@
 }
 
 .promo__title {
-  margin-bottom: 29px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
 }
 
+.promo__card-text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 0;
+  }
+}
+
 .promo__list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,7 +42,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 83px;
     flex-wrap: wrap;
   }
 }

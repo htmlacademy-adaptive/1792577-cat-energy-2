@@ -2,6 +2,7 @@
   position: relative;
   min-height: 600px;
   box-sizing: border-box;
+  margin-bottom: 6px;
 }
 
 .example__background {
@@ -40,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
-    padding: 10px 110px;
+    padding: 8px 110px;
     margin-bottom: 32px;
   }
 }
@@ -274,7 +275,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 14px;
+    top: 7px;
     right: 110px;
   }
 }
@@ -310,7 +311,7 @@
 .example__slider-button {
   position: absolute;
   left: 50%;
-  top: 110px;
+  top: 123px;
   width: 40px;
   height: 40px;
   background-color: $special-color-white;
@@ -336,10 +337,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: -111px;
+    top: -109px;
     left: 50%;
     width: 4px;
-    height: 111px;
+    height: 109px;
     background-color: $special-grey-2;
     translate: -50% 0;
     box-shadow: 0 147px 0 0 $special-grey-2;
@@ -347,7 +348,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 270px;
+    top: 251px;
     left: 50%;
 
     &::after {

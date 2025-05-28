@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 110px 110px 10px;
+    padding: 111px 110px 10px;
   }
 }
 
@@ -141,6 +141,7 @@
   margin: 0 0 15px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 24px;
     padding-left: 50px;
     max-width: 340px;
     border: none;
@@ -194,17 +195,16 @@
   display: block;
   mask-image: url("../../icons/stack.svg#arrow-link");
   background-color: $special-color-black;
-
   mask-repeat: no-repeat;
   mask-size: cover;
   width: 29px;
   height: 12px;
-  padding-left: 15px;
+  padding-left: 29px;
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
 
   @media (min-width: $tablet-width) {
-    padding-left: 25px;
+    padding-left: 46px;
   }
 
   @media (min-width: $desktop-width) {
