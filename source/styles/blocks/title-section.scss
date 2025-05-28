@@ -1,0 +1,60 @@
+.title-section {
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.title-section-catalog {
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-color-black;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: $special-color-white;
+  z-index: 4;
+  position: relative;
+  padding: 0 40px 0 0;
+  width: fit-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $special-color-white;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    z-index: -2;
+    width: 100vw;
+    height: 2px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    box-shadow: 100vw 0 $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0 40px;
+
+    &::after {
+      content: "";
+      background-color: $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

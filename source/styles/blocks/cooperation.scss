@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding: 60px 70px;
 
     &--catalog {
@@ -20,7 +20,7 @@
   }
 
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     min-width: 565px;
     z-index: 1;
@@ -37,13 +37,13 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
     width: 30%;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     width: 40%;
   }
 }
@@ -52,7 +52,7 @@
   line-height: 20px;
   margin: 0;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     line-height: 20px;
     height: 100%;
     display: flex;
@@ -60,17 +60,17 @@
     text-align: end;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     text-align: start;
   }
 }
 
 .cooperation__text-city {
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     margin-top: 20px;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     margin-top: 18px;
   }
 }
@@ -83,7 +83,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     height: 400px;
   }
 }
@@ -104,7 +104,7 @@
     background-image: url("../../images/map-mobail@2x.jpg");
   }
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     background-image: url("../../images/map-tablet@1x.jpg");
     height: 400px;
 
@@ -114,7 +114,7 @@
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     background-image: url("../../images/map-desktop@1x.jpg");
     height: 400px;
 

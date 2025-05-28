@@ -1,25 +1,15 @@
 .additions {
   position: relative;
 
-  &::before {
-    content: "";
-    border: 1px solid #68b738;
-    position: absolute;
-    top: 44px;
-    right: 0;
-    min-width: calc(100% - 288px);
-  }
-
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     &::before {
-      min-width: calc(100% - 413px);
+      top: 44px;
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     &::before {
       top: 48px;
-      min-width: calc(100% - 528px);
     }
   }
 }
@@ -27,12 +17,12 @@
 .additions__wrapper {
   padding: 26px 20px 21px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding: 30px;
     margin-bottom: 29px;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     padding: 30px 110px;
     margin-bottom: -24px;
   }
@@ -40,11 +30,10 @@
 
 .additions__title {
   margin-bottom: 80px;
-  background-color: #ffffff;
 }
 
 .additions__container {
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 75% auto;
     gap: 61px;
@@ -54,7 +43,7 @@
 .additions__card-list {
   margin-bottom: 34px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 69px;
 
     &:not(:last-child) {
@@ -63,7 +52,7 @@
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     &:not(:last-child) {
       border: none;
     }
@@ -79,7 +68,7 @@
   padding: 13px 0;
 
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     padding: 26px 37px 23px;
     gap: 21px 0;
@@ -88,7 +77,7 @@
       border-bottom: none;
     }
 
-    @media (min-width: $desktop-widht) {
+    @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       justify-content: space-between;
@@ -96,7 +85,7 @@
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     &:last-child {
       border-bottom: 1px solid $special-grey;
     }
@@ -106,11 +95,11 @@
 .additions__card:first-child {
   border-top: 1px solid $special-grey;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     border-top: none;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     border-top: 1px solid $special-grey;
   }
 }
@@ -123,13 +112,13 @@
   grid-column: 1/4;
   margin-bottom: -1px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     grid-column: 1/2;
   }
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding: 26px 0;
   }
 }
@@ -140,14 +129,14 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     grid-column: 2/-1;
     display: grid;
     justify-content: end;
     padding-top: 2px;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
     grid-column: 2 / 3;
     align-items: center;
@@ -161,7 +150,7 @@
   grid-column: 1/2;
   padding: 0 2px 1px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     grid-column: 2/3;
@@ -171,7 +160,7 @@
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     grid-column: 1/2;
   }
 }
@@ -186,7 +175,7 @@
     line-height: 16px;
   }
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     grid-column: 3/4;
     padding-right: 5px;
 
@@ -196,7 +185,7 @@
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -207,12 +196,12 @@
   width: 100%;
   margin-bottom: 5px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     max-width: 244px;
     grid-column: 3/4;
     height: fit-content;
@@ -231,6 +220,7 @@
   background-position: center;
   min-width: 100%;
   min-height: 290px;
+  background-color: $basic-green;
 
   @media (min-resolution: 2dpi) {
     background-image:
@@ -238,7 +228,7 @@
       url("../../images/catalog/cat-backpack-mobail@2x.jpg");
   }
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
     min-height: 200px;
     background-image:
@@ -252,7 +242,7 @@
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     background-image:
       linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(104, 183, 56, 0.85) 0),
       url("../../images/catalog/cat-backpack-desktop@1x.jpg");
@@ -287,7 +277,7 @@
     justify-self: center;
   }
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     align-self: center;
     text-align: left;
     padding: 30px 127px;
@@ -298,7 +288,7 @@
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     text-align: center;
     align-self: end;
     padding: 10px 40px 28px;

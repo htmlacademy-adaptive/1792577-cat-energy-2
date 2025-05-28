@@ -2,24 +2,20 @@
 /* в этот файл добавляет скрипты*/
 
 // eslint-disable-next-line check-file/folder-naming-convention
-const openButton = document.querySelector('.header__button--open');
-const closeButton = document.querySelector('.header__button--close');
-const navList = document.querySelector('.header__nav-list');
+document.documentElement.classList.add('js-enabled');
 
-function showMenu() {
-  navList.style.display = 'block';
-  openButton.style.display = 'none';
-  closeButton.style.display = 'block';
-}
+const openBtn = document.querySelector('.header__button--open');
+const closeBtn = document.querySelector('.header__button--close');
 
-function hideMenu() {
-  navList.style.display = 'none';
-  openButton.style.display = 'block';
-  closeButton.style.display = 'none';
-}
 
-openButton.addEventListener('click', showMenu);
-closeButton.addEventListener('click', hideMenu);
+openBtn.addEventListener('click', () => {
+  document.documentElement.classList.add('menu-open');
+});
+
+closeBtn.addEventListener('click', () => {
+  document.documentElement.classList.remove('menu-open');
+});
+
 
 /*Slider*/
 const sliderForm = document.querySelector('.example__sliders-container');
