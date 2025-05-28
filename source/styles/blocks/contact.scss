@@ -18,7 +18,7 @@
   max-width: 1440px;
   margin: auto;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     display: grid;
@@ -28,8 +28,8 @@
     gap: 110px;
   }
 
-  @media (min-width: $desktop-widht) {
-    padding: 71px 110px;
+  @media (min-width: $desktop-width) {
+    padding: 68px 110px 65px;
     gap: 360px;
   }
 }
@@ -37,12 +37,12 @@
 .contact__logo-link {
   padding: 20px 20px 15px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
 
-@media (min-width: $desktop-widht) {
+@media (min-width: $desktop-width) {
   .contact__logo-icon:hover,
   .contact__logo-icon:focus {
     fill-opacity: 0.7;
@@ -53,38 +53,41 @@
   }
 }
 
+.contact__social-border {
+  border-top: 1px solid $gray-accent;
+  border-bottom: 1px solid $gray-accent;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .contact__social-list {
   justify-content: center;
-  border-top: 1px solid $special-grey-ligth;
-  border-bottom: 1px solid $special-grey-ligth;
   width: 100%;
+  max-width: 177px;
   margin: 0;
-  padding: 23px 13px 15px;
+  padding: 19px 13px 18px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   box-sizing: border-box;
   text-align: center;
-  justify-items: center;
+  justify-self: center;
 
-  @media (min-width: $tablet-widht) {
+
+  @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 154px;
+  }
 }
 
-/*
-.contact__social-link {
-  padding: 13px;
-  color: $special-grey-2;
-
-  &:first-child {
-    padding: 12px;
-  }
-} */
-
-
-@media (min-width: $desktop-widht) {
+@media (min-width: $desktop-width) {
   .contact__social-link:hover,
   .contact__social-link:focus,
   .contact__logo-additional-icon:hover,
@@ -105,6 +108,11 @@
   height: 22px;
   box-sizing: border-box;
   display: block;
+  justify-self: center;
+
+  &:first-child {
+    padding: 12px;
+  }
 }
 
 
@@ -133,7 +141,7 @@
   padding: 21px 10px;
 
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
     gap: 23px;
@@ -152,7 +160,7 @@
   background-color: $special-grey-2;
 }
 
-@media (min-width: $desktop-widht) {
+@media (min-width: $desktop-width) {
   .contact__logo-additional-link:hover .contact__logo-additional-icon,
   .contact__logo-additional-link:focus .contact__logo-additional-icon {
     background-color: $basic-green;

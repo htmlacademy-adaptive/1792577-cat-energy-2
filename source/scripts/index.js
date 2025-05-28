@@ -2,24 +2,39 @@
 /* в этот файл добавляет скрипты*/
 
 // eslint-disable-next-line check-file/folder-naming-convention
-const openButton = document.querySelector('.header__button--open');
-const closeButton = document.querySelector('.header__button--close');
-const navList = document.querySelector('.header__nav-list');
+document.documentElement.classList.add('js-enabled');
 
-function showMenu() {
-  navList.style.display = 'block';
-  openButton.style.display = 'none';
-  closeButton.style.display = 'block';
+const openBtn = document.querySelector('.header__button--open');
+const closeBtn = document.querySelector('.header__button--close');
+
+
+openBtn.addEventListener('click', () => {
+  document.documentElement.classList.add('menu-open');
+});
+
+closeBtn.addEventListener('click', () => {
+  document.documentElement.classList.remove('menu-open');
+});
+
+
+function checkScreenWidth() {
+  const html = document.documentElement;
+  const tabletWidth = 768; // задайте вашу ширину планшета
+
+  if (window.innerWidth >= tabletWidth) {
+    // Если ширина экрана планшет и больше — удаляем класс
+    html.classList.remove('js-enabled');
+  } else {
+    // Если меньше планшета — добавляем класс
+    html.classList.add('js-enabled');
+  }
 }
 
-function hideMenu() {
-  navList.style.display = 'none';
-  openButton.style.display = 'block';
-  closeButton.style.display = 'none';
-}
+// Проверяем при загрузке страницы
+checkScreenWidth();
 
-openButton.addEventListener('click', showMenu);
-closeButton.addEventListener('click', hideMenu);
+// Проверяем при изменении размера окна
+window.addEventListener('resize', checkScreenWidth);
 
 /*Slider*/
 const sliderForm = document.querySelector('.example__sliders-container');

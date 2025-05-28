@@ -6,7 +6,7 @@
   align-items: center;
   margin-bottom: 0;
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 14px;
   }
 }
@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
   min-width: 100%;
   min-height: 302px;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   box-sizing: border-box;
   margin-bottom: -100px;
@@ -38,7 +38,7 @@
     background-image: url("../../images/index/background/index-background-mobail@2x.jpg");
   }
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     background-image: none;
     padding: 0;
 
@@ -47,13 +47,15 @@
     }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     position: absolute;
-    min-width: 50%;
-    min-height: 694px;
-    right: 0;
+    min-width: 50vw;
+    height: 694px;
+    left: 720px;
     top: -172px;
     background-image: url("../../images/index/background/index-background-desktop@1x.jpg");
+    background-position: 0 0;
+    background-size: cover;
 
     &::before {
       content: "";
@@ -76,16 +78,17 @@
 .greetings__container-text {
   position: relative;
 
-  @media (min-width: $tablet-widht) {
-    padding-top: 37px;
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
     margin-left: 119px;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     top: 187px;
     right: 529px;
     width: 100%;
+    padding-top: 37px;
   }
 }
 
@@ -94,10 +97,14 @@
   text-align: center;
   margin-bottom: 23px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     color: $special-color-black;
     text-align: start;
     margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -111,7 +118,7 @@
   text-align: center;
   margin: 0;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     color: $special-color-black;
     font-size: 20px;
     line-height: 20px;
@@ -123,33 +130,33 @@
   margin: -35px auto -1px;
   position: relative;
 
-  @media (min-width: $tablet-widht) {
-    margin: 35px auto -1px;
+  @media (min-width: $tablet-width) {
+    margin: 14px auto -1px;
   }
 }
 
 .greetings__img {
   z-index: 1;
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     left: -163px;
-    top: -64px;
+    top: -43px;
   }
 }
 
 .greetings__button {
   padding: 10px 64px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     z-index: 1;
     padding: 14px 27px;
     position: absolute;
-    top: 266px;
+    top: 245px;
     left: 120px;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     top: 284px;
     left: 190px;
     padding: 14px 28px;
