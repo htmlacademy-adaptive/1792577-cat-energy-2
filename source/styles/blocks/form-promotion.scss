@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: -20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 61px;
+  }
 }
 
 .form-promotion__container {
@@ -17,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 22px;
+    margin-bottom: 26px;
   }
 }
 
@@ -30,7 +34,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 90px;
     margin-bottom: 7px;
   }
 }
@@ -42,7 +45,7 @@
   color: $special-color-black;
   text-align: center;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;

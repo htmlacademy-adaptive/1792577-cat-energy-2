@@ -17,6 +17,25 @@ closeBtn.addEventListener('click', () => {
 });
 
 
+function checkScreenWidth() {
+  const html = document.documentElement;
+  const tabletWidth = 768; // задайте вашу ширину планшета
+
+  if (window.innerWidth >= tabletWidth) {
+    // Если ширина экрана планшет и больше — удаляем класс
+    html.classList.remove('js-enabled');
+  } else {
+    // Если меньше планшета — добавляем класс
+    html.classList.add('js-enabled');
+  }
+}
+
+// Проверяем при загрузке страницы
+checkScreenWidth();
+
+// Проверяем при изменении размера окна
+window.addEventListener('resize', checkScreenWidth);
+
 /*Slider*/
 const sliderForm = document.querySelector('.example__sliders-container');
 

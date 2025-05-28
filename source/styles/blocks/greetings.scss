@@ -52,7 +52,7 @@
     min-width: 50vw;
     height: 694px;
     left: 720px;
-    top: -173px;
+    top: -193px;
     background-image: url("../../images/index/background/index-background-desktop@1x.jpg");
     background-position: 0 0;
     background-size: cover;
@@ -79,7 +79,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 15px;
     margin-left: 119px;
   }
 
@@ -88,6 +88,7 @@
     top: 187px;
     right: 529px;
     width: 100%;
+    padding-top: 37px;
   }
 }
 
@@ -100,6 +101,10 @@
     color: $special-color-black;
     text-align: start;
     margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -126,7 +131,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 35px auto -1px;
+    margin: 14px auto -1px;
   }
 }
 
@@ -147,12 +152,12 @@
     z-index: 1;
     padding: 14px 27px;
     position: absolute;
-    top: 266px;
+    top: 245px;
     left: 120px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 284px;
+    top: 263px;
     left: 190px;
     padding: 14px 28px;
   }

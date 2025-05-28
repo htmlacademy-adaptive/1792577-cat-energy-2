@@ -23,13 +23,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 110px;
-    margin-bottom: -24px;
+    padding: 30px 69px;
+    margin-bottom: -22px;
   }
 }
 
 .additions__title {
-  margin-bottom: 80px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .additions__container {
@@ -37,11 +41,12 @@
     display: grid;
     grid-template-columns: 75% auto;
     gap: 61px;
+    padding: 0 40px;
   }
 }
 
 .additions__card-list {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
@@ -65,7 +70,7 @@
   gap: 14px;
   margin: 0;
   border-bottom: 1px solid $special-grey;
-  padding: 13px 0;
+  padding: 12px 0;
 
 
   @media (min-width: $tablet-width) {
@@ -118,7 +123,7 @@
     grid-column: 1/2;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 26px 0;
   }
 }
