@@ -2,12 +2,12 @@
   padding: 20px;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding: 30px 30px 26px;
     margin-bottom: 63px;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     padding: 110px;
     margin-bottom: -5px;
   }
@@ -16,20 +16,20 @@
 .promo__title {
   margin-bottom: 29px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
 }
 
 .promo__list {
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 120px 60px;
     counter-reset: benefit 0;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -40,10 +40,11 @@
   align-items: center;
   margin-bottom: -2px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: start;
     counter-increment: benefit 1;
+    max-width: 256px;
   }
 }
 
@@ -95,7 +96,7 @@
     background-color: $special-color-white;
   }
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     min-width: 80px;
     min-height: 80px;
     margin-bottom: 15px;
@@ -119,11 +120,7 @@
   }
 
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     align-self: flex-start;
   }
-}
-
-.promo__card-text {
-  max-width: 260px;
 }

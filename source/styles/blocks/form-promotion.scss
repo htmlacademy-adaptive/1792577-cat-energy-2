@@ -1,46 +1,22 @@
 .form-promotion {
   position: relative;
-
-  &::before {
-    content: "";
-    border: 1px solid #68b738;
-    position: absolute;
-    top: 29px;
-    right: 0;
-    min-width: calc(100% - 214px);
-  }
-
-  @media (min-width: $tablet-widht) {
-    &::before {
-      min-width: calc(100% - 314px);
-      top: 35px;
-    }
-  }
-
-  @media (min-width: $desktop-widht) {
-    &::before {
-      min-width: calc(100% - 404px);
-      top: 38px;
-    }
-  }
 }
 
 .form-promotion__form {
   padding: 20px;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     margin-bottom: -20px;
   }
 }
 
-
 .form-promotion__container {
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding: 66px 49px 80px;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 22px;
   }
 }
@@ -48,22 +24,14 @@
 .form-promotion__title {
   margin-bottom: 31px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding-left: 50px;
     margin-bottom: 1px;
-
-    &::before {
-      top: 35px;
-    }
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     padding-left: 90px;
     margin-bottom: 7px;
-
-    &::before {
-      top: 38px;
-    }
   }
 }
 
@@ -76,7 +44,7 @@
   margin: 0;
   margin-bottom: 24px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
   }
@@ -85,11 +53,11 @@
 .form-promotion__container-input {
   margin: auto;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     max-width: 752px;
   }
 }
@@ -105,17 +73,17 @@
   border: 1px solid $special-grey;
   border-radius: 1px;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
     width: 152%;
   }
 
-  @media (min-width: $desktop-widht) {
+  @media (min-width: $desktop-width) {
     width: 204%;
   }
 }
 
-@media (min-width: $desktop-widht) {
+@media (min-width: $desktop-width) {
   .form-promotion__input--error {
     border: 2px solid #ff8282;
   }
@@ -140,7 +108,7 @@
   padding: 18px;
   width: 100%;
 
-  @media (min-width: $tablet-widht) {
+  @media (min-width: $tablet-width) {
     padding: 15px;
   }
 }
