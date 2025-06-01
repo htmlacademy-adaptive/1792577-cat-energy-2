@@ -7,7 +7,7 @@
 
 .example__background {
   @media (min-width: $desktop-width) {
-    position: absolute;
+    position: relative;
 
     background: linear-gradient(to bottom, $special-color-white 24%, $special-grey-medium 24%, $special-grey-medium 100%);
 
