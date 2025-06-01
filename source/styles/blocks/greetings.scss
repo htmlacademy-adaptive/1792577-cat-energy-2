@@ -147,6 +147,7 @@
 
 .greetings__button {
   padding: 10px 64px;
+  max-width: 250px;
 
   @media (min-width: $tablet-width) {
     z-index: 1;

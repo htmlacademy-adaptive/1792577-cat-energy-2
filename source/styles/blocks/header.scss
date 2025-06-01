@@ -112,6 +112,10 @@
   }
 }
 
+.header__button--open {
+  display: none;
+}
+
 .header__button--close {
   display: none;
 
@@ -181,6 +185,11 @@
   position: absolute;
   width: 100vw;
   left: -20px;
+}
+
+
+.js-enabled .header__button {
+  display: none;
 }
 
 .js-enabled .header__button--open {

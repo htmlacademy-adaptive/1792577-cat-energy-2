@@ -11,6 +11,10 @@
   <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/oswald/oswaldregular.woff" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -28,7 +32,6 @@
             <img class="header__logo-icon header__logo-text" src="./images/logo-header/logo-header-text/logo-text-mobail.svg" width="101" height="18" alt="Логотип-текст сайта">
           </picture>
         </a>
-
         <div class="header__buttons">
           <button class="header__button header__button--open" type="button">
             <span class="visually-hidden">Открыть навигацию</span>
@@ -86,6 +89,11 @@
               <li class="catalog__card catalog__card--large">
                 <a class="catalog__card-img-link catalog__card-link" href="#">
                   <picture>
+                    <source media="(min-width: 1440px)" type="image/webp" srcset="
+                    ./images/catalog/products/chicken/chicken1000-desktop@1x.webp 1x,
+                    ./images/catalog/products/chicken/chicken1000-desktop@2x.webp 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="./images/catalog/products/chicken/chicken1000-tablet@1x.webp 1x, ./images/catalog/products/chicken/chicken1000-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="./images/catalog/products/chicken/chicken1000-mobail@1x.webp 1x, ./images/catalog/products/chicken/chicken1000-mobail@2x.webp 2x" width="140" height="107">
                     <source media="(min-width: 1440px)" srcset="./images/catalog/products/chicken/chicken1000-desktop@1x.png 1x, ./images/catalog/products/chicken/chicken1000-desktop@2x.png 2x" width="169" height="210" type="image/png">
                     <source media="(min-width: 768px)" srcset="./images/catalog/products/chicken/chicken1000-tablet@1x.png 1x, ./images/catalog/products/chicken/chicken1000-tablet@2x.png 2x" width="200" height="210" type="image/png">
                     <img class="catalog__card-img" src="./images/catalog/products/chicken/chicken1000-mobail@1x.png" srcset="./images/catalog/products/chicken/chicken1000-mobail@2x.png" width="140" height="107" alt="Корм со вкусом курицы 1000грамм">
@@ -114,6 +122,9 @@
               </li>
               <li class="catalog__card">
                 <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="./images/catalog/products/fish/fish500-desktop@1x.webp 1x, ./images/catalog/products/fish/fish500-desktop@2x.webp 2x" width="169" height="210">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="./images/catalog/products/fish/fish500-tablet@1x.webp 1x, ./images/catalog/products/fish/fish500-tablet@2x.webp 2x" width="200" height="210">
+                  <source type="image/webp" srcset="./images/catalog/products/fish/fish500-mobail@1x.webp 1x, ./images/catalog/products/fish/fish500-mobail@2x.webp 2x" width="140" height="107">
                   <source media="(min-width: 1440px)" srcset="./images/catalog/products/fish/fish500-desktop@1x.png 1x, ./images/catalog/products/fish/fish500-desktop@2x.png 2x" width="169" height="210" type="image/png">
                   <source media="(min-width: 768px)" srcset="./images/catalog/products/fish/fish500-tablet@1x.png 1x, ./images/catalog/products/fish/fish500-tablet@2x.png 2x" width="200" height="210" type="image/png">
                   <img class="catalog__card-img" src="./images/catalog/products/fish/fish500-mobail@1x.png" srcset="./images/catalog/products/fish/fish500-mobail@2x.png" width="140" height="107" alt="Корм со вкусом рыбы 500грамм">
@@ -140,6 +151,9 @@
               <li class="catalog__card catalog__card--large">
                 <a class="catalog__card-img-link catalog__card-link" href="#">
                   <picture>
+                    <source media="(min-width: 1440px)" type="image/webp" srcset="./images/catalog/products/fish/fish1000-desktop@1x.webp 1x, ./images/catalog/products/fish/fish1000-desktop@2x.webp 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="./images/catalog/products/fish/fish1000-tablet@1x.webp 1x, ./images/catalog/products/fish/fish1000-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="./images/catalog/products/fish/fish1000-mobail@1x.webp 1x, ./images/catalog/products/fish/fish1000-mobail@2x.webp 2x" width="140" height="107">
                     <source media="(min-width: 1440px)" srcset="./images/catalog/products/fish/fish1000-desktop@1x.png 1x, ./images/catalog/products/fish/fish1000-desktop@2x.png 2x" width="169" height="210" type="image/png">
                     <source media="(min-width: 768px)" srcset="./images/catalog/products/fish/fish1000-tablet@1x.png 1x, ./images/catalog/products/fish/fish1000-tablet@2x.png 2x" width="200" height="210" type="image/png">
                     <img class="catalog__card-img" src="./images/catalog/products/fish/fish1000-mobail@1x.png" srcset="./images/catalog/products/fish/fish1000-mobail@2x.png" width="140" height="107" alt="Корм со вкусом рыбы 1000грамм">
@@ -169,6 +183,9 @@
               <li class="catalog__card">
                 <a class="catalog__card-img-link catalog__card-link" href="#">
                   <picture>
+                    <source media="(min-width: 1440px)" type="image/webp" srcset="./images/catalog/products/buckwheat/buckwheat500-desktop@1x.webp 1x, ./images/catalog/products/buckwheat/buckwheat500-desktop@2x.webp 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="./images/catalog/products/buckwheat/buckwheat500-tablet@1x.webp 1x, ./images/catalog/products/buckwheat/buckwheat500-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="./images/catalog/products/buckwheat/buckwheat500-mobail@1x.webp 1x, ./images/catalog/products/buckwheat/buckwheat500-mobail@2x.webp 2x" width="140" height="107">
                     <source media="(min-width: 1440px)" srcset="./images/catalog/products/buckwheat/buckwheat500-desktop@1x.png 1x, ./images/catalog/products/buckwheat/buckwheat500-desktop@1x.png 2x" width="169" height="210" type="image/png">
                     <source media="(min-width: 768px)" srcset="./images/catalog/products/buckwheat/buckwheat500-tablet@1x.png 1x, ./images/catalog/products/buckwheat/buckwheat500-tablet@2x.png 2x" width="200" height="210" type="image/png">
                     <img class="catalog__card-img" src="./images/catalog/products/buckwheat/buckwheat500-mobail@1x.png" srcset="./images/catalog/products/buckwheat/buckwheat500-mobail@2x.png" width="140" height="107" alt="Корм со вкусом гречки 500грамм">
@@ -199,6 +216,9 @@
               <li class="catalog__card catalog__card--large">
                 <a class="catalog__card-img-link catalog__card-link" href="#">
                   <picture>
+                    <source media="(min-width: 1440px)" type="image/webp" srcset="./images/catalog/products/buckwheat/buckwheat1000-desktop@1x.webp 1x, ./images/catalog/products/buckwheat/buckwheat1000-desktop@2x.webp 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="./images/catalog/products/buckwheat/buckwheat1000-tablet@1x.webp 1x, ./images/catalog/products/buckwheat/buckwheat1000-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="./images/catalog/products/buckwheat/buckwheat1000-mobail@1x.webp 1x, ./images/catalog/products/buckwheat/buckwheat1000-mobail@2x.webp 2x" width="140" height="107">
                     <source media="(min-width: 1440px)" srcset="./images/catalog/products/buckwheat/buckwheat1000-desktop@1x.png 1x, ./images/catalog/products/buckwheat/buckwheat1000-desktop@1x.png 2x" width="169" height="210" type="image/png">
                     <source media="(min-width: 768px)" srcset="./images/catalog/products/buckwheat/buckwheat1000-tablet@1x.png 1x, ./images/catalog/products/buckwheat/buckwheat1000-tablet@2x.png 2x" width="200" height="210" type="image/png">
                     <img class="catalog__card-img" src="./images/catalog/products/buckwheat/buckwheat1000-mobail@1x.png" srcset="./images/catalog/products/buckwheat/buckwheat1000-mobail@2x.png" width="140" height="107" alt="Корм со вкусом гречки 1000грамм">
@@ -228,6 +248,9 @@
               <li class="catalog__card">
                 <a class="catalog__card-img-link catalog__card-link" href="#">
                   <picture>
+                    <source media="(min-width: 1440px)" type="image/webp" srcset="./images/catalog/products/rice/rice500-desktop@1x.webp 1x, ./images/catalog/products/rice/rice500-desktop@2x.webp 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="./images/catalog/products/rice/rice500-tablet@1x.webp 1x, ./images/catalog/products/rice/rice500-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="./images/catalog/products/rice/rice500-mobile@1x.webp 1x, ./images/catalog/products/rice/rice500-mobile@2x.webp 2x" width="140" height="107">
                     <source media="(min-width: 1440px)" srcset="./images/catalog/products/rice/rice500-desktop@1x.png 1x, ./images/catalog/products/rice/rice500-desktop@1x.png 2x" width="169" height="210" type="image/png">
                     <source media="(min-width: 768px)" srcset="./images/catalog/products/rice/rice500-tablet@1x.png 1x, ./images/catalog/products/rice/rice500-tablet@2x.png 2x" width="200" height="210" type="image/png">
                     <img class="catalog__card-img" src="./images/catalog/products/rice/rice500-mobile@1x.png" srcset="./images/catalog/products/rice/rice500-mobile@1x.png" width="140" height="107" alt="Корм со вкусом риса 500грамм">
@@ -252,7 +275,6 @@
                     </div>
                   </div>
                 </div>
-
                 <button class="catalog__card-button button" type="button">Заказать</button>
               </li>
               <li class="catalog__card catalog__card--more">
